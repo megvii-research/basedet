@@ -1,0 +1,26 @@
+# code formatter
+# force to use same version of the formatter, only can be changed by maintainer.
+autoflake==1.3.1
+isort==4.3.21
+pylint==2.3.1
+
+pydocstyle
+flake8==3.8.3
+astroid<2.3.0
+seed-isort-config
+
+# project usage
+sphinx==2.4.4
+setuptools
+pre-commit
+gitlint
+recommonmark
+sphinx_rtd_theme
+sphinx_bootstrap_theme
+sphinx-markdown-tables
+
+toml
+
+# unitest
+pytest
+pytest-cov

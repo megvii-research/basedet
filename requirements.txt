@@ -1,0 +1,16 @@
+basecore>=0.1.9
+colorama
+easydict
+grpcio==1.34.1
+loguru
+megfile
+numpy
+opencv_python
+Pillow
+portalocker
+pycocotools
+PyYAML
+scipy
+tabulate
+tensorboardX
+megengine
