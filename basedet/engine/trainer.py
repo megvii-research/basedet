@@ -66,7 +66,7 @@ class DetTrainer(BaseTrainer):
         if self.enable_ema:
             momentum = ema_config.MOMENTUM
             if momentum is None:
-                total_iter = self.max_epoch * self.num_image_per_epoch / model_batch_size
+                total_iter = self.progress.max_epoch * self.progress.max_iter
                 update_period = ema_config.UPDATE_PERIOD
                 momentum = calculate_momentum(ema_config.ALPHA, total_iter, update_period)
             self.ema = ModelEMA(self.model, momentum, burnin_iter=ema_config.BURNIN_ITER)

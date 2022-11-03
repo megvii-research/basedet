@@ -135,8 +135,8 @@ def get_indent_length(func):
 def lint_source(filename):
     try:
         subprocess.call(["black", filename])
-    except Exception:
-        pass
+    except FileNotFoundError:
+        logger.warning("Please install black to lint source code")
     try:
         subprocess.call(["isort", "-rc", filename])
     except Exception:
@@ -162,7 +162,8 @@ def check_cfg_diff(cfg1, cfg2):
     diff2 = cfg2.diff(cfg1)
     assert set(diff1.keys()) == set(diff2.keys())
     for k, v in diff1.items():
-        assert isinstance(v, types.FunctionType)
+        if not isinstance(v, types.FunctionType):
+            assert not v
     logger.info("All check passed...")
 
 
