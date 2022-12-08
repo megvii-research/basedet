@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-# -*- coding:utf-8 -*-
+#!/usr/bin/env python3
 
 from .box_convert import BoxConverter, BoxMode
 from .box_utils import get_iou_cpu, rotate_box

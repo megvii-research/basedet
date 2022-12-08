@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding:utf-8 -*-
+
 import megengine.data.transform as T
 
 from basedet.data.transforms import RandomSizeCrop

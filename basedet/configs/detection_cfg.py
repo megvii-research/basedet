@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 # Copyright (c) Megvii, Inc. All rights reserved.
 
 import megfile

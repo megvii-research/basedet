@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding:utf-8 -*-
 
 import megengine.functional as F
 from megengine.random import uniform

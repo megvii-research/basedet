@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-# -*- coding:utf-8 -*-
+#!/usr/bin/env python3
 
 import megengine.functional as F
 from megengine import Tensor

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding:utf-8 -*-
-# Copyright (c) 2014-2022 Megvii Inc. All rights reserved.
+# Copyright (c) Megvii Inc. All rights reserved.
 # flake8: noqa: F401
 
 # common include those code related to module except definition of module.

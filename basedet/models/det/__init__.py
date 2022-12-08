@@ -1,4 +1,3 @@
-# encoding: utf-8
 # flake8: noqa: F401
 
 from .atss import ATSS

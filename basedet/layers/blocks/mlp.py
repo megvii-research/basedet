@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding:utf-8 -*-
 import megengine.module as M
 
 from basecore.network import get_activation

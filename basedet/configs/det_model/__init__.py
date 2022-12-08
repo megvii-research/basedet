@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# -*- coding:utf-8 -*-
 
 from .atss_cfg import ATSSConfig
 from .centernet_cfg import CenterNetConfig

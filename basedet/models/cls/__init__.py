@@ -1,4 +1,3 @@
-# encoding: utf-8
 # flake8: noqa: F401
 from .darknet import darknet21, darknet53
 from .resnet import resnet18, resnet34, resnet50, resnet101, resnet152

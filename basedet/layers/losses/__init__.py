@@ -1,4 +1,3 @@
-# encoding: utf-8
 # flake8: noqa: F401
 
 from .cross_entropy import binary_cross_entropy, weighted_cross_entropy
