@@ -31,6 +31,8 @@ _COCO_INFO["path"] = {
     "coco_2017_test": ("coco/test2017", "coco/annotations/image_info_test2017.json"),
     "coco_2017_test-dev": ("coco/test2017", "coco/annotations/image_info_test-dev2017.json"),
     "coco_2017_val_100": ("coco/val2017", "coco/annotations/instances_val2017_100.json"),
+    # coco mini: for megstudio only
+    "cocomini_2017_train": ("coco/train", "coco/annotations/cocomini.json"),
 }
 
 INFO.register(_COCO_INFO, name="COCO")
