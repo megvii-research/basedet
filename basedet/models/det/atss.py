@@ -40,7 +40,7 @@ class ATSS(FCOS):
                 distances = F.sqrt(
                     F.sum((F.expand_dims(gt_centers, axis=1) - anchors_i) ** 2, axis=2)
                 )
-                _, topk_idxs = F.topk(distances, self.cfg.MODEL.ANCHOR.TOPK)
+                _, topk_idxs = F.topk(distances, self.cfg.MODEL.ANCHOR.TOPK, descending=False)
                 candidate_idxs.append(base + topk_idxs)
                 base += anchors_i.shape[0]
             ious = F.concat(ious, axis=1)

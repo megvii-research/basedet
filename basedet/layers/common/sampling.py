@@ -24,7 +24,7 @@ def sample_labels(labels, num_samples, label_value, ignore_label=-1):
 
     random_tensor = F.zeros_like(labels).astype("float32")
     random_tensor[mask] = uniform(size=num_valid)
-    _, invalid_inds = F.topk(random_tensor, k=num_samples - num_valid)
+    _, invalid_inds = F.topk(random_tensor, k=num_samples - num_valid, descending=False)
 
     labels[invalid_inds] = ignore_label
     return labels
