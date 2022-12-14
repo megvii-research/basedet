@@ -23,7 +23,7 @@ See [INSTALL.md](INSTALL.md).
 2. Prepare dataset
 3. Train model
 
-    BaseDet provides a simple command `det_train` to train model. Just simply run the follwing command to train network (config is used to describe the training process).
+    BaseDet provides a simple command `basedet_train` to train model. Just simply run the follwing command to train network (config is used to describe the training process).
     ```shell
     basedet_train -f config.py
     ```
